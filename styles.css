@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#game-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #333;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#expression {
+    position: absolute;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: left 0.1s ease-out;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.answer-box {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    height: 60px;
+    background-color: #2196F3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#score {
+    font-size: 24px;
+    margin: 20px;
+}
+
+#controls {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #2196F3;
+}
+
+#function-select {
+    margin-right: 20px;
+}
+
+#instructions-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-content h2 {
+    color: #2196F3;
+    margin-top: 0;
+}
+
+.modal-content ul {
+    line-height: 1.6;
+}
+
+.special-angles {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.correct {
+    background-color: #4CAF50 !important;
+    transition: background-color 0.3s;
+}
+
+.incorrect {
+    background-color: #f44336 !important;
+    transition: background-color 0.3s;
+}
